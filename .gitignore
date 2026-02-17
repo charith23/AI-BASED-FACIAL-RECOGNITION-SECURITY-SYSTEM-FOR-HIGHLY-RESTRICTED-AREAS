@@ -1,0 +1,40 @@
+# --- 1. Python Junk (Bytecode) ---
+__pycache__/
+*.pyc
+
+# --- 2. Virtual Environments (Huge Files - DO NOT UPLOAD) ---
+venv/
+venv_new/
+venv311/
+env/
+
+# --- 3. Secrets (Security Risk - DO NOT UPLOAD) ---
+.env
+config/telegram.yaml  # If this has your real token, ignore it too.
+
+# --- 4. Runtime Data (Generated automatically) ---
+captures/
+evidence/
+reports/
+*.csv
+*.log
+
+# --- 5. Images generated during runtime ---
+*.jpg
+*.png
+!assets/*.jpg  # Assuming you might have a logo or something to keep
+
+# --- 6. User Data (Privacy) ---
+# Don't upload your personal photos, but keep the folder structure
+data/known_faces/*
+!data/known_faces/.gitkeep
+
+# You can choose to upload the trained model so your friend can use it immediately
+# If you want them to train from scratch, uncomment the next line:
+# data/lbph/lbph_model.yml
+
+# --- 7. OS/Editor Junk ---
+.DS_Store
+.vscode/
+.idea/
+test_cam.py.save
